@@ -1,5 +1,9 @@
+import os,sys
+sys.path.append(os.path.join(os.getcwd(),"dsa"))
 
+from utils.readFiles import readFiles
 
+readFiles = readFiles()
 
 
 
@@ -16,10 +20,10 @@ def arrayReversal(input_data : list):
         first +=1
     return input_data
 
-input_data = read_input()
+input_data = readFiles.read_input()
 
 #writing None to the output file
-write_output(mode = 'w')
+readFiles.write_output(mode = 'w')
 
 for i in range(len(input_data)):
     current_input = input_data[i].strip().split(",")
@@ -27,7 +31,7 @@ for i in range(len(input_data)):
     print(output_data)
     output_data = ", ".join(output_data)+"\n"
 
-    write_output(output_data=output_data,mode = 'a')
+    readFiles.write_output(output_data=output_data,mode = 'a')
     
 
 

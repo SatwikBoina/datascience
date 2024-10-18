@@ -1,1 +1,2 @@
-__all__ = ['readFiles']
+
+__name__ = ["readFiles"]
