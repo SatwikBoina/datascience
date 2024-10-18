@@ -26,7 +26,6 @@ def dutchFlag(input:list):
         elif input[start]>=0:
             #swap with last element
             input[start],input[last]=input[last],input[start]
-            #start+=1
             last-=1
         
 
