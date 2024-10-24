@@ -56,9 +56,6 @@ class LinkedList :
 
     def getNodeAt(self,pos):
         # returns the pointer before pos
-        if self.head is None:
-            return None
-
         # check the position limits 
 
         if 0<= pos< self.n:
@@ -68,6 +65,7 @@ class LinkedList :
                 pos-=1
             return pointer
         else :
+        
             # raise an error
             print("out of range index error")
 
@@ -77,9 +75,17 @@ class LinkedList :
 
     
     def insert_at(self,pos,val):
-        current_node = self.getNodeAt(pos)
-        print(f"Node value at {pos}: {current_node.value}")
         new_node = Node(val)
+
+        if pos == 0 :
+            new_node.next = self.head
+            self.head = new_node
+            self.n +=1
+        
+
+        current_node = self.getNodeAt(pos-1)
+        print(f"Node value at {pos}: {current_node.value}")
+        
         if current_node is None :
             self.head = new_node
         else : 
