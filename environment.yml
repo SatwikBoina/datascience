@@ -1,0 +1,39 @@
+name: ds-base-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - ipykernel
+  - jupyterlab
+  - notebook
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - plotly
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - tensorflow
+  - keras
+  - pytorch
+  - torchvision
+  - shap
+  - lime
+  - pyjanitor
+  - missingno
+  - pydantic
+  - nltk
+  - spacy
+  - transformers
+  - beautifulsoup4
+  - requests
+  - sqlalchemy
+  - ipython-sql
+  - mlflow
+  - optuna
+  - pip
+  - pip:
+      - fastapi       # Optional: for deployment
+      - uvicorn       # Optional: for FastAPI dev server

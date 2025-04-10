@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Conda environment files
+*.conda
+*.env
+*.venv
+env/
+venv/
+.ds-base-env/
+*.yml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+.code-workspace
+
+# PyCharm settings (if using)
+.idea/
+
+# Output files
+*.log
+*.out
+*.bak
+*.tmp
+
+# Data files (optional — uncomment if needed)
+# *.csv
+# *.tsv
+# *.xls*
+# *.parquet
+# *.feather
+# *.h5
+# *.db
+# *.sqlite
+
+# Model files (optional — uncomment if needed)
+# *.pkl
+# *.joblib
+# *.pt
+# *.h5
+
+# Plot images
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# Environment dump
+.env
+.env.*
+
+# Cache
+*.cache/
+*.mypy_cache/
+*.pytest_cache/
+
+# MacOS files
+.DS_Store
