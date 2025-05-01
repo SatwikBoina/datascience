@@ -1,18 +1,15 @@
-def bubble_sort(arr):
+def selection_sort(arr):
 
     for i in range(len(arr)):
-        #loop for iterations :
-        for j in range(len(arr)-i-1):
+        #loop for iterations : identify the min value
+        min_value_position = i
+        for j in range(i+1,len(arr)):
             # loop for comparisions and swapping
-            swapped = False
-            if arr[j]>arr[j+1]:
-                arr[j],arr[j+1] = swap_nums(arr[j],arr[j+1])
-                swapped = True
-            
-        if not swapped:
-                print("Iteration:",i)
-                # if there is no swapping, then the arrays are already sorted.
-                break    
+            if arr[j]<arr[min_value_position]:
+                min_value_position = j
+                #arr[j],min_value = swap_nums(arr[j],min_value)
+        arr[i],arr[min_value_position] = swap_nums(arr[i],arr[min_value_position])
+        
 
     return arr
 
@@ -28,7 +25,7 @@ if __name__ == "__main__":
         try:
             # Convert the line to a list (e.g., "[1, 2, 3]" -> [1, 2, 3])
             array = eval(line)
-            sorted_array = bubble_sort(array)
+            sorted_array = selection_sort(array)
             results.append(str(sorted_array))
         except Exception as e:
             results.append(f"Error: {e}")
