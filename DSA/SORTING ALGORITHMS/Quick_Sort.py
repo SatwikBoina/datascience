@@ -9,9 +9,10 @@ def bubble_sort(arr):
                 arr[j],arr[j+1] = swap_nums(arr[j],arr[j+1])
                 swapped = True
             
-            if swapped == False :
+        if not swapped:
+                print("Iteration:",i)
                 # if there is no swapping, then the arrays are already sorted.
-                break
+                break    
 
     return arr
 
