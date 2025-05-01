@@ -3,10 +3,15 @@ def bubble_sort(arr):
     for i in range(len(arr)):
         #loop for iterations :
         for j in range(len(arr)-i-1):
-            k = j+1
-
-            if arr[j]>arr[k]:
-                arr[j],arr[k] = swap_nums(arr[j],arr[k])
+            # loop for comparisions and swapping
+            swapped = False
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1] = swap_nums(arr[j],arr[j+1])
+                swapped = True
+            
+            if swapped == False :
+                # if there is no swapping, then the arrays are already sorted.
+                break
 
     return arr
 
