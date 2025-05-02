@@ -1,17 +1,30 @@
-def insertion_sort(arr):
-        
-    for i in range(1,len(arr)):
-        #starting the iteration of the first sorted array
-        j = i
-        # current_element = arr[i]
-        # sorted array range index : 0 to i-1
-        while arr[j] < arr[j-1] and j>0:
-            arr[j-1],arr[j] = arr[j],arr[j-1]
-            #fitting with the sorted array
-            j-=1
-        #print(arr)
-
+def quick_sort(arr,left,right):
+    if left < right :
+        pivot_index = pivot_find(arr,left,right)
+        quick_sort(arr,left,pivot_index-1)
+        quick_sort(arr,pivot_index+1,right)
+    
     return arr
+    
+def pivot_find(arr,left,right):
+
+    i = left
+    j = right-1
+
+    while i < j:
+        while arr[i]<arr[right]:
+            i+=1
+        while arr[j]>arr[right]:
+            j-=1
+
+        if i < j :
+            arr[i],arr[j] = arr[j],arr[i]
+    if arr[i]>arr[right]:
+        arr[i],arr[right] = arr[right],arr[i]
+    return i
+
+    
+
 
 swap_nums = lambda x, y: (y, x)
 
@@ -25,7 +38,7 @@ if __name__ == "__main__":
         try:
             # Convert the line to a list (e.g., "[1, 2, 3]" -> [1, 2, 3])
             array = eval(line)
-            sorted_array = insertion_sort(array)
+            sorted_array = quick_sort(array,0,len(array)-1)
             results.append(str(sorted_array))
         except Exception as e:
             results.append(f"Error: {e}")
