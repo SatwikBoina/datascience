@@ -50,7 +50,8 @@ class Graph :
                     continue
                 if self.adj_matrix[start_index][i] == 1 and is_visited[self.vertices[i]]==False:
                     dfs_recursive(self.vertices[i],is_visited,dfs_result) 
-            
+        
+        
         dfs_recursive(start,is_visited,dfs_result)
 
         return dfs_result
