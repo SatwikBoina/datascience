@@ -1,0 +1,75 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment & dependency files
+.env
+.env.*
+*.env
+*.venv
+.venv/
+venv/
+env/
+ENV/
+Pipfile.lock
+
+# Conda
+*.conda
+*.egg-info/
+*.egg
+*.log
+*.yaml~
+*.lock
+*.DS_Store
+
+# Conda build
+conda-bld/
+conda-merge.log
+
+# Kaggle API token
+kaggle.json
+.kaggle/
+
+# Data folders (optional: only if regenerated)
+data/
+**/data/
+**/*.zip
+**/*.tar.gz
+**/*.h5
+**/*.parquet
+**/*.csv
+
+# VS Code & IDE
+.vscode/
+.idea/
+
+# Compiled notebooks
+*.nbconvert.ipynb
+
+# Mac OS
+.DS_Store
+.Trashes
+.Spotlight-V100
+.AppleDouble
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Project-specific output
+output/
+outputs/
+results/
+
+# IPython history
+.profile
+.ipython/
+.history
+
