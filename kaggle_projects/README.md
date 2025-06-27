@@ -17,13 +17,19 @@ The structure and utilities are designed to streamline downloading datasets usin
 - Download your `kaggle.json` API token from [Kaggle Account](https://www.kaggle.com/settings).
 - Place it in your home directory under `.kaggle/`:
   
-``bash
+```bash
   mkdir -p ~/.kaggle
   mv /path/to/kaggle.json ~/.kaggle/
   chmod 600 ~/.kaggle/kaggle.json
-  
+```
 ### 2. Create a Conda environment
 ```bash
     conda env create -f env.yaml
     conda activate kaggle_env
 ```
+
+### 3. Set up a Project Directory
+```bash
+    python setup_project.py "Titanic Survival Prediction"
+```
+
