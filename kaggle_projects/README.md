@@ -27,8 +27,12 @@ The structure and utilities are designed to streamline downloading datasets usin
     conda env create -f env.yaml
     conda activate kaggle_env
 ```
+### 3. Add Project name and it's data slug
+    1. go to the kaggle_downloader\config.yaml
+    2. Mention the project_folder : slug in the yaml file
 
-### 3. Set up a Project Directory
+### 4. Set up a Project Directory
+Call the project folder name here.
 ```bash
     python setup_project.py "Titanic Survival Prediction"
 ```

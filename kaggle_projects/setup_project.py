@@ -132,10 +132,13 @@ def create_project_structure(project_name):
 
     # Download datasets from kaggle_downloader/config.yaml and copy CSVs
     datasets = load_kaggle_config()
-    for name, slug in datasets.items():
+    if project_name in datasets:
+        slug = datasets[project_name]
         dataset_path = download_dataset(slug)
         project_input_path = os.path.join(base_path, "data", "input")
         copy_csv_to_project_input(dataset_path, project_input_path)
+    else:
+        print(f"⚠️ No dataset found for project '{project_name}' in kaggle_downloader/config.yaml")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
