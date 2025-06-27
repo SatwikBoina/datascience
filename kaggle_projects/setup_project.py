@@ -109,7 +109,7 @@ def create_project_structure(project_name):
         )
 
     # notebooks/starter_notebook.ipynb
-    notebook_path = os.path.join(base_path, "notebooks", "starter_notebook.ipynb")
+    notebook_path = os.path.join(base_path, "notebooks", "Exploratory_Data_Analysis.ipynb")
     with open(notebook_path, "w") as f:
         f.write("""{
  "cells": [],
@@ -138,7 +138,7 @@ def create_project_structure(project_name):
         project_input_path = os.path.join(base_path, "data", "input")
         copy_csv_to_project_input(dataset_path, project_input_path)
     else:
-        print(f"⚠️ No dataset found for project '{project_name}' in kaggle_downloader/config.yaml")
+        print(f"⚠️ No dataset found for project '{project_name}' in config.yaml")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
