@@ -1,3 +1,18 @@
-datasets : {
-  "california_housing_prices" : camnugent/california-housing-prices
-}
+datasets:
+  "Titanic Survival Prediction": heptapod/titanic
+  "Iris Flower Classification": uciml/iris
+  "Penguin Classification": parulpandey/palmer-archipelago-antarctica-penguin-data
+  "Diabetes Prediction": mathchi/diabetes-data-set
+  "Breast Cancer Diagnosis": uciml/breast-cancer-wisconsin-data
+  "Student Performance Analysis": spscientist/students-performance-in-exams
+  "House Prices Advanced Regression": c/competitions/house-prices-advanced-regression-techniques
+  "Heart Disease Prediction": khoongweihao/heart-disease-prediction
+  "Loan Status Prediction": shubhendra7/loan-application-status-prediction
+  "Wine Quality Prediction": uciml/red-wine-quality-cortez-et-al-2009
+  "Bank Marketing Campaign": janiobachmann/bank-marketing-dataset
+  "Credit Card Fraud Detection": mlg-ulb/creditcardfraud
+  "Zillow Home Value Forecasting": zillow/zecon
+  "Forest Cover Type Classification": uciml/forest-cover-type-dataset
+  "Sentiment140 Twitter Data": kazanova/sentiment140
+  "Fake News Detection": clmentbisaillon/fake-and-real-news-dataset
+  "IMDB Movie Reviews Sentiment": lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
