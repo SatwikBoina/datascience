@@ -16,3 +16,4 @@ datasets:
   "Sentiment140 Twitter Data": kazanova/sentiment140
   "Fake News Detection": clmentbisaillon/fake-and-real-news-dataset
   "IMDB Movie Reviews Sentiment": lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+  "Marketing Campaign Analysis": davinwijaya/customer-retention
